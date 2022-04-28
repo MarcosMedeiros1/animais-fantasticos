@@ -7,8 +7,8 @@ p,
 dl,
 dd,
 dt {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -23,7 +23,7 @@ ul {
 body {
   background: #faf6ed;
   color: #222;
-  -webkit-font-smoothing: antialiaesed;
+  -webkit-font-smoothing: antialiased;
 }
 
 .grid-container {
@@ -226,11 +226,11 @@ body {
   }
 
   .menu {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .copy {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -311,4 +311,19 @@ body {
 .js [data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+[data-semana]::after {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 1px solid #000;
+}
+
+[data-semana].aberto::after {
+  background-color: greenyellow;
 }
