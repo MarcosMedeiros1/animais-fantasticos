@@ -1,6 +1,6 @@
 import initFuncioanmento from "./modules/funcionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
-import initSmoothScroll from "./modules/smooth-scroll.js";
+import SmoothScroll from "./modules/smooth-scroll.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 import initAnimaScroll from "./modules/anima-scroll.js";
@@ -12,7 +12,8 @@ import initModal from "./modules/modal.js";
 
 initFuncioanmento();
 initFetchAnimais();
-initSmoothScroll();
+const smoothScroll = new SmoothScroll("[data-menu='suave'] a[href^='#']");
+smoothScroll.init();
 initDropdownMenu();
 initFetchBitcoin();
 initAnimaScroll();
