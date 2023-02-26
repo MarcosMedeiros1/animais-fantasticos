@@ -1,4 +1,4 @@
-const classAtivo = "ativo";
+const classAtivo = "active";
 export default function initAnimaScroll() {
   const sections = document.querySelectorAll("[data-anime='scroll']");
   const windowHalf = window.innerHeight * 0.6;
@@ -10,8 +10,8 @@ export default function initAnimaScroll() {
 
       if (isSectionVisible) {
         section.classList.add(classAtivo);
-      } else if (section.classList.contains(".ativo")) {
-        section.classList.remove(".ativo");
+      } else if (section.classList.contains(".active")) {
+        section.classList.remove(".active");
       }
     });
   }
