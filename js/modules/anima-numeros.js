@@ -20,7 +20,7 @@ export default function initAnimaNumeros() {
   let observer;
 
   function handleMutation(mutation) {
-    if (mutation[0].target.classList.contains("ativo")) {
+    if (mutation[0].target.classList.contains("active")) {
       observer.disconnect();
       animaNumeros();
     }
