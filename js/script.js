@@ -1,5 +1,5 @@
 import initFuncioanmento from "./modules/funcionamento.js";
-import initFetchAnimais from "./modules/fetch-animais.js";
+import fetchAnimais from "./modules/fetch-animais.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 import initAnimaScroll from "./modules/anima-scroll.js";
@@ -33,7 +33,7 @@ const toolTip = new Tooltip("[data-tooltip]");
 toolTip.init();
 
 initFuncioanmento();
-initFetchAnimais();
+fetchAnimais("../animaisapi.json", ".numeros-grid");
 initDropdownMenu();
 initFetchBitcoin();
 initAnimaScroll();
