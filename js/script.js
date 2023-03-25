@@ -7,6 +7,7 @@ import AnimaScroll from "./modules/anima-scroll.js";
 import MenuMobile from "./modules/menu-mobile.js";
 import Accordion from "./modules/accordion.js";
 import Tooltip from "./modules/tooltip.js";
+import SlideNav from "./modules/slide.js";
 import TabNav from "./modules/tabnav.js";
 import Modal from "./modules/modal.js";
 
@@ -46,3 +47,7 @@ funcionamento.init();
 
 fetchAnimais("../animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
+
+const slide = new SlideNav(".slide-container", ".slide");
+slide.init();
+slide.addControl(".custom-control");
